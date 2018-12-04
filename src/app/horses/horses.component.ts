@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Horse } from '../horse'; // neigh
 
 @Component({
   // these are metadata properties created by CLI 
@@ -15,5 +16,10 @@ export class HorsesComponent implements OnInit {
 	ngOnInit() {
 	}
 
-	hero = "Windstorm";
+	horse: Horse = {
+		id: 1,
+		name: 'Bojack'
+	};
+
+	
 }
