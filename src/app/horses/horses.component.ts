@@ -20,6 +20,6 @@ export class HorsesComponent implements OnInit {
 		id: 1,
 		name: 'Bojack'
 	};
-
 	
 }
+

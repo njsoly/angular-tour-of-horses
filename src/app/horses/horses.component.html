@@ -4,4 +4,9 @@
 </div>
 <div>
 	<span>name: </span>{{horse.name | uppercase}}
+
+	<label>name: 
+		<!-- TWO-WAY BINDING !!!  -->
+		<input [(ngModel)]="horse.name" placeholder="name">
+	</label>
 </div>
