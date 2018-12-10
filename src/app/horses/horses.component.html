@@ -1,3 +1,10 @@
+<h2 class="boxIt">My Horsepeople</h2>
+<ul class="horses">
+	<li *ngFor="let horse of horses">
+		<span class="badge">{{horse.id}}</span> {{horse.name}}
+	</li>
+</ul>
+
 <h2>{{horse.name}} Details</h2>
 <div>
 	<span>id: </span>{{horse.id}}
