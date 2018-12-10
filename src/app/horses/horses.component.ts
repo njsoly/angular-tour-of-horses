@@ -9,17 +9,17 @@ import { Horse } from '../horse'; // neigh
 })
 export class HorsesComponent implements OnInit {
 
+	horse: Horse = {
+		id: 1,
+		name: 'Bojack'
+	};
+
 	constructor() { 
 	
 	}
 
 	ngOnInit() {
 	}
-
-	horse: Horse = {
-		id: 1,
-		name: 'Bojack'
-	};
 	
 }
 
