@@ -7,24 +7,4 @@
 	</li>
 </ul>
 
-
-<!-- DETAILS OF SELECTED -->
-<div *ngIf="selectedHorse">
-
-	<h2>{{selectedHorse.name | uppercase}} Details</h2>
-	<div>
-		<span>id: </span>{{selectedHorse.id}}
-	</div>
-	<div>
-		<span>name: </span>{{selectedHorse.name | uppercase}}
-		
-		<label>name: 
-			<!-- TWO-WAY BINDING !!!  -->
-			<!-- ngModel is NOT available by default.  -->
-			<!-- must opt-in via the FormsModule -->
-			<input [(ngModel)]="selectedHorse.name" placeholder="name">
-		</label>
-	</div>
-</div>
-	
-	
+<app-horse-detail [horse]="selectedHorse"></app-horse-detail>

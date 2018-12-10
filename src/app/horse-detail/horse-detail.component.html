@@ -1,3 +1,18 @@
-<p>
-  horse-detail works!
-</p>
+<!-- DETAILS OF SELECTED -->
+<div *ngIf="horse">
+
+    <h2>{{horse.name | uppercase}} Details</h2>
+    <div>
+      <span>id: </span>{{horse.id}}
+    </div>
+    <div>
+      <span>name: </span>{{horse.name | uppercase}}
+      
+      <label>name: 
+        <!-- TWO-WAY BINDING !!!  -->
+        <!-- ngModel is NOT available by default.  -->
+        <!-- must opt-in via the FormsModule -->
+        <input [(ngModel)]="horse.name" placeholder="name">
+      </label>
+    </div>
+  </div>
