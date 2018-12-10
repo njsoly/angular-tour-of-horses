@@ -13,10 +13,11 @@ export class HorsesComponent implements OnInit {
 
 	horses = HORSES;
 
-	horse: Horse = {
-		id: 1,
-		name: 'Bojack'
-	};
+	selectedHorse: Horse;
+
+	onSelect(horse: Horse): void {
+		this.selectedHorse = horse;
+	}
 
 	constructor() { 
 	
@@ -24,6 +25,8 @@ export class HorsesComponent implements OnInit {
 
 	ngOnInit() {
 	}
+
+
 	
 }
 
