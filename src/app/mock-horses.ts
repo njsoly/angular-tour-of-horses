@@ -1,4 +1,4 @@
-import { Horse } from './horses';
+import { Horse } from './horse';
 
 export const HORSES: Horse[] = [
     {id: 11, name: 'BoJack'},
