@@ -1,6 +1,8 @@
 <h2 class="boxIt">My Horsepeople</h2>
 <ul class="horses">
-	<li *ngFor="let horse of horses" (click)="onSelect(horse)">
+	<li *ngFor="let horse of horses"
+		[class.selected]="horse === selectedHorse"
+		(click)="onSelect(horse)">
 		<span class="badge">{{horse.id}}</span> {{horse.name}}
 	</li>
 </ul>
