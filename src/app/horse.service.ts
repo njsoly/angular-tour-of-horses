@@ -13,7 +13,7 @@ export class HorseService {
 
   constructor() { }
 
-  getHORSES(): Horse[] {
+  getHorses(): Horse[] {
     return HORSES;
   }
 
