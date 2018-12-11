@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Horse } from '../horse'; // neigh
 import { HORSES } from '../mock-horses';
+import { HorseService } from '../horse.service';
+
 
 
 @Component({
