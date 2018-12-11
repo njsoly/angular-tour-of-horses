@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { Horse } from './horse';
+import {HORSES } from './mock-horses';
 
 @Injectable({
   providedIn: 'root',
