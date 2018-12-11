@@ -6,6 +6,13 @@ import { Horse } from '../horse';
   templateUrl: './horse-detail.component.html',
   styleUrls: ['./horse-detail.component.css']
 })
+
+/**
+ * This is the detached "Detail" component, which handles the display of 
+ * the details of one specific Horse instance.
+ * 
+ * It was taken from HorsesComponent (horses.component.html).
+ */
 export class HorseDetailComponent implements OnInit {
   @Input() horse: Horse;
 
