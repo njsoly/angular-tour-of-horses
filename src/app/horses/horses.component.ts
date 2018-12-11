@@ -21,8 +21,9 @@ export class HorsesComponent implements OnInit {
 		this.selectedHorse = horse;
 	}
 
-	constructor() { 
-	
+	constructor(private horseService: HorseService) { 
+		// injecting the HorseService?
+		
 	}
 
 	ngOnInit() {
