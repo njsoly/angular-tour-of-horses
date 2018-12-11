@@ -12,4 +12,9 @@ import {HORSES } from './mock-horses';
 export class HorseService {
 
   constructor() { }
+
+  getHORSES(): Horse[] {
+    return HORSES;
+  }
+
 }
