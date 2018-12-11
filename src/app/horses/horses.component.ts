@@ -13,7 +13,7 @@ import { HorseService } from '../horse.service';
 })
 export class HorsesComponent implements OnInit {
 
-	horses = HORSES;
+	horses: Horse[];
 
 	selectedHorse: Horse;
 
