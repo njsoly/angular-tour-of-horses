@@ -23,7 +23,7 @@ export class HorseDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private heroService: HorseService,
+    private horseService: HorseService,
     private location: Location,
   ) {}
 
