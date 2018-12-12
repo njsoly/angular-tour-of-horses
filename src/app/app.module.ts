@@ -6,14 +6,16 @@ import { HorsesComponent } from './horses/horses.component';
 import { FormsModule } from '@angular/forms';
 import { HorseDetailComponent } from './horse-detail/horse-detail.component';
 import { MessagesComponent } from './messages/messages.component';
-import { AppRoutingModule } from './app-routing.module'; // <-- NgModel lives here
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component'; // <-- NgModel lives here
 
 @NgModule({
   declarations: [
     AppComponent,
     HorsesComponent,
     HorseDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
