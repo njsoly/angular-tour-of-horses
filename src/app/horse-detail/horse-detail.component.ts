@@ -21,7 +21,11 @@ import { HorseService }  from '../horse.service';
 export class HorseDetailComponent implements OnInit {
   @Input() horse: Horse;
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private heroService: HorseService,
+    private location: Location,
+  ) {}
 
   ngOnInit() {
   }
