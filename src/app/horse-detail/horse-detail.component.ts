@@ -27,7 +27,13 @@ export class HorseDetailComponent implements OnInit {
     private location: Location,
   ) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.getHorse();
   }
-
+  
+  getHorse(): void {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.horseService.getHorse(id)
+      .subscribe(horse => this.horse = horse);
+  }
 }
