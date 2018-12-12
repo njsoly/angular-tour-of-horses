@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HorsesComponent } from './horses/horses.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HorseDetailComponent } from './horse-detail/horse-detail.component';
 
 /**
  * This is the "AppRoutingModule" that you've heard so much about.
@@ -23,6 +24,13 @@ const routes: Routes = [
    * route itself.
    */
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+
+  /** This is a PARAMETERIZED ROUTE. 
+   * 
+   * The colon in the path indicates that ":id" is a placeholder, 
+   * to be evaluated t a specific horse's id.
+   */
+  { path: 'detail/:id', component: HorseDetailComponent },
 ];
 
 @NgModule({
