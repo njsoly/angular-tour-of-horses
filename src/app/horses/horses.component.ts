@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Horse } from '../horse'; // neigh
 import { HorseService } from '../horse.service'; // takes the place of the former mock data
 
@@ -11,10 +12,10 @@ import { HorseService } from '../horse.service'; // takes the place of the forme
   styleUrls: ['./horses.component.css']
 })
 export class HorsesComponent implements OnInit {
+	
+	selectedHorse: Horse;
 
 	horses: Horse[];
-
-	selectedHorse: Horse;
 
 	onSelect(horse: Horse): void {
 		this.selectedHorse = horse;
@@ -36,7 +37,4 @@ export class HorsesComponent implements OnInit {
 		;
 	}
 
-
-	
 }
-
