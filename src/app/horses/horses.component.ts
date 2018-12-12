@@ -31,7 +31,9 @@ export class HorsesComponent implements OnInit {
 
 	getHorses(): void {
 		this.horseService.getHorses()
-		.subscribe(horses => this.horses = horses);
+		// observable data
+		.subscribe(horses => this.horses = horses)
+		;
 	}
 
 

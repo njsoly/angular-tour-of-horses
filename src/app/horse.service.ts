@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Horse } from './horse';
 import { HORSES } from './mock-horses';
+import { Observable, of } from 'rxjs';
 
 @Injectable ({
   providedIn: 'root',
@@ -13,8 +14,8 @@ export class HorseService {
 
   constructor() { }
 
-  getHorses(): Horse[] {
-    return HORSES;
+  getHorses(): Observable<Horse[]> {
+    return of(HORSES);
   }
 
 }
