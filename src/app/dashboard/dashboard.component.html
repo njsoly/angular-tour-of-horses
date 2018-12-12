@@ -1,7 +1,8 @@
 <h3>Top Horses</h3>
 <div class="grid grid-pad">
   <!-- creates as many links as are in the compoent's "horses" array. -->
-  <a *ngFor="let horse of horses" class="col-1-4">
+  <a *ngFor="let horse of horses" class="col-1-4"
+    routerLink="/detail/{{horse.id}}">
     <div class="module horse">
       <h4>{{horse.name}}</h4>
     </div>
