@@ -22,6 +22,8 @@ export class HorseService {
    * This is wicked important.
    */
   getHorses(): Observable<Horse[]> {
+    // this returns an Observable<Horse[]> 
+    // that emits a SINGLE VALUE: the array of mock horses.
     return of(HORSES);
   }
 
