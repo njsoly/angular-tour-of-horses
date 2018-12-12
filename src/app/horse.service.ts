@@ -38,4 +38,10 @@ export class HorseService {
     return of(HORSES);
   }
 
+  getHorse(id: number): Observable<Horse> {
+    // TODO: send the message _after_ fetching the horse
+    this.messageService.add(`HorseService: fetched horse id=${id}`);
+    return of(HORSES.find(horse => horse.id === id));
+  }
+
 }
