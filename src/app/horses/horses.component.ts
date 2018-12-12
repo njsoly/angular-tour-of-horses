@@ -25,7 +25,10 @@ export class HorsesComponent implements OnInit {
 		
 	}
 
-	ngOnInit() {
+	ngOnInit() {}
+
+	getHorses(): void {
+		this.horses = this.horseService.getHorses();
 	}
 
 
