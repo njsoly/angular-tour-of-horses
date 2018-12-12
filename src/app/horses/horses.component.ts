@@ -21,12 +21,12 @@ export class HorsesComponent implements OnInit {
 	}
 
 	constructor(private horseService: HorseService) { 
-		// injecting the HorseService?
 		
 	}
 
+	/** The "ngOnInit lifecycle hook" */
 	ngOnInit() {
-		this.getHorses();
+		this.getHorses();	
 	}
 
 	getHorses(): void {
