@@ -28,6 +28,9 @@ export class HorseService {
    * This is wicked important.
    */
   getHorses(): Observable<Horse[]> {
+    // TODO: send the message _After_ fetching the horses.
+    this.messageService.add('HorseService: fetched horses.');
+    
     // this returns an Observable<Horse[]> 
     // that emits a SINGLE VALUE: the array of mock horses.
     return of(HORSES);
