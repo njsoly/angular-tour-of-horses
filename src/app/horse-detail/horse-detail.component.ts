@@ -1,6 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Horse } from '../horse';
 
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+
+import { HorseService }  from '../horse.service';
+
 @Component({
   selector: 'app-horse-detail',
   templateUrl: './horse-detail.component.html',
