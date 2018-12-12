@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-messages',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessagesComponent implements OnInit {
 
-  constructor() { }
+  /** angular shall inject the singleton MessageService 
+   * into that property when it creates the MessagesComponent. 
+   */
+  constructor(public messageService: MessageService) { }
 
   ngOnInit() {
   }
