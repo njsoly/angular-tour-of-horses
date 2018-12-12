@@ -8,7 +8,8 @@ import { HorseDetailComponent } from './horse-detail/horse-detail.component';
  * This is the "AppRoutingModule" that you've heard so much about.
  */
 
-/* this array is referred to as: 
+/** 
+ * this array is referred to as: 
  * "the AppRoutingModule.routes array".
  */
 const routes: Routes = [
