@@ -12,20 +12,20 @@ import { HorseDetailComponent } from './horse-detail/horse-detail.component';
  * "the AppRoutingModule.routes array".
  */
 const routes: Routes = [
-  /** this will match the URL 'horses' and link you 
-   * over to "HorsesComponent".
-   */
-  { path: 'horses', component: HorsesComponent },
-
-  /** dashboard route */
-  { path: 'dashboard', component: DashboardComponent },
-
   /** default route, for when the browser asks for the app's 
    * route itself.
    */
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  
+  /** this will match the URL 'horses' and link you 
+   * over to "HorsesComponent".
+   */
+  { path: 'horses', component: HorsesComponent },
+  
+  /** dashboard route */
+  { path: 'dashboard', component: DashboardComponent },
 
-  /** This is a PARAMETERIZED ROUTE. 
+  /** This is a PARAMETERIZED ROUTE.
    * 
    * The colon in the path indicates that ":id" is a placeholder, 
    * to be evaluated t a specific horse's id.
