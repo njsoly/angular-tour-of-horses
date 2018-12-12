@@ -16,8 +16,13 @@ const routes: Routes = [
    */
   { path: 'horses', component: HorsesComponent },
 
-  /*  */
+  /** dashboard route */
   { path: 'dashboard', component: DashboardComponent },
+
+  /** default route, for when the browser asks for the app's 
+   * route itself.
+   */
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
 ];
 
 @NgModule({
