@@ -13,7 +13,12 @@ import { MessageService } from './message.service';
  */
 export class HorseService {
 
-  constructor() { }
+  /** creation of a typical "service-in-service" scenario.
+   * 
+   * - you inject MessageService into HorseService,
+   * - which itself is injected into the HorsesComponent.
+   */
+  constructor(private messageService: MessageService) { }
 
   /** Making the return type be an
    * OBSERVABLE satisfies the need to make
