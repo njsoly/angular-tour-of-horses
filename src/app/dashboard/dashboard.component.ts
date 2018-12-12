@@ -1,3 +1,5 @@
+/** https://angular.io/tutorial/toh-pt5#add-a-dashboard-view */
+
 import { Component, OnInit } from '@angular/core';
 import { Horse } from '../horse';
 import { HorseService } from '../horse.service';
